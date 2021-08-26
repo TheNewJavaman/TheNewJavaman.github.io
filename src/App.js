@@ -3,6 +3,7 @@ import profile from './profile.jfif';
 //import profile from './drone.jpg';
 import data from './data.json';
 import Collapsible from 'react-collapsible';
+import { ExpandMore } from '@material-ui/icons';
 
 function App() {
   console.log(data);
@@ -31,11 +32,14 @@ function App() {
         <div className="content-column">
           {
             data.map(section => <Collapsible open={section.opened} trigger={
-              <p className="section-name">{
-                section.opened
-                  ? section.name
-                  : section.name + " (" + section.entries.length + ")"
-              }</p>
+              <div className="section-name">
+                <p className="section-name-text">{
+                  section.opened
+                    ? section.name
+                    : section.name + " (" + section.entries.length + ")"
+                }</p>
+                <ExpandMore fontSize="large" className="section-name-icon"></ExpandMore>
+              </div>
             }>
               {
                 section.entries.map(entry => <div>
