@@ -1,6 +1,7 @@
 [
     {
         "name": "EXPERIENCE",
+        "opened": true,
         "entries": [
             {
                 "name": "Software Engineer Intern",
@@ -25,6 +26,7 @@
     },
     {
         "name": "EDUCATION",
+        "opened": true,
         "entries": [
             {
                 "name": "Polytechnic School",
@@ -37,6 +39,7 @@
     },
     {
         "name": "AWARDS",
+        "opened": false,
         "entries": [
             {
                 "name": "AP Scholar with Honor Award",
@@ -70,6 +73,7 @@
     },
     {
         "name": "PROJECTS",
+        "opened": false,
         "entries": [
             {
                 "name": "Skyblock Repository",

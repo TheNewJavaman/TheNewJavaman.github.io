@@ -122,6 +122,7 @@ a:hover::after, a:focus::after {
   display: flex;
   justify-content: center;
   min-height: calc(100vh - 470px);
+  padding-bottom: 50px;
 }
 
 .content-column {

@@ -30,8 +30,13 @@ function App() {
       <div className="content">
         <div className="content-column">
           {
-            data.map(section => <Collapsible trigger={<p className="section-name">{section.name}</p>}>
-
+            data.map(section => <Collapsible open={section.opened} trigger={
+              <p className="section-name">{
+                section.opened
+                  ? section.name
+                  : section.name + " (" + section.entries.length + ")"
+              }</p>
+            }>
               {
                 section.entries.map(entry => <div>
                   <p className="entry-name">{entry.name}</p>
