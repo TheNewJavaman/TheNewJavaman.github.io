@@ -132,7 +132,6 @@ a:hover::after, a:focus::after {
 }
 
 .section-name {
-  cursor: pointer;
   margin-bottom: -10px;
   margin-top: 35px;
   display: block;
@@ -153,7 +152,7 @@ a:hover::after, a:focus::after {
 
 .section-name-text {
   font-family: 'Poppins';
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 600;
   color: #303030;
 }
@@ -164,7 +163,7 @@ a:hover::after, a:focus::after {
 
 .entry-name {
   font-family: 'Roboto';
-  font-size: 23px;
+  font-size: 20px;
   margin-top: 20px;
   font-weight: 400;
 }
@@ -172,13 +171,17 @@ a:hover::after, a:focus::after {
 .entry-subtitle {
   font-family: 'Poppins';
   font-weight: 400;
-  font-size: 15px;
+  font-size: 14px;
   margin-top: -3px;
   margin-bottom: 2px;
 }
 
 .entry-description {
   font-family: 'Source Sans Pro';
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 300;
+}
+
+.entry-iframe {
+  margin-top: 20px;
 }

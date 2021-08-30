@@ -2,8 +2,6 @@ import './App.css';
 import profile from './profile.jfif';
 //import profile from './drone.jpg';
 import data from './data.json';
-import Collapsible from 'react-collapsible';
-import { ExpandMore } from '@material-ui/icons';
 
 function App() {
   console.log(data);
@@ -31,28 +29,26 @@ function App() {
       <div className="content">
         <div className="content-column">
           {
-            data.map(section => <Collapsible open={section.opened} trigger={
+            data.map(section => <div>
               <div className="section-name">
-                <p className="section-name-text">{
-                  section.opened
-                    ? section.name
-                    : section.name + " (" + section.entries.length + ")"
-                }</p>
-                <ExpandMore fontSize="large" className="section-name-icon"></ExpandMore>
+                <p className="section-name-text">{section.name}</p>
               </div>
-            }>
               {
-                section.entries.map(entry => <div>
-                  <p className="entry-name">{entry.name}</p>
-                  <p className="entry-subtitle">{entry.subtitle}</p>
-                  {
-                    entry.description.map(description => <div>
-                      <p className="entry-description">{description}</p>
-                    </div>)
-                  }
-                </div>)
+                section.entries.map(entry =>
+                  <div className="">
+                    {entry.name ? <p className="entry-name">{entry.name}</p> : null}
+                    {entry.subtitle ? <p className="entry-subtitle">{entry.subtitle}</p> : null}
+                    {entry.description
+                      ? entry.description.map(description => <div>
+                        <p className="entry-description">{description}</p>
+                      </div>)
+                      : null
+                    }
+                    {entry.iframeLink ? <iframe className="entry-iframe" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src={entry.iframeLink}></iframe> : null}
+                  </div>
+                )
               }
-            </Collapsible>)
+            </div>)
           }
         </div>
       </div>

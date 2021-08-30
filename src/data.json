@@ -72,6 +72,24 @@
         ]
     },
     {
+        "name": "MUSIC",
+        "opened": false,
+        "entries": [
+            {
+                "iframeLink": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1115087815&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+            },
+            {
+                "iframeLink": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1115089606&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+            },
+            {
+                "iframeLink": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1114867303&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+            },
+            {
+                "iframeLink": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1115082187&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+            }
+        ]
+    },
+    {
         "name": "PROJECTS",
         "opened": false,
         "entries": [
@@ -87,20 +105,28 @@
                 "subtitle": "Kotlin/JavaFX, OpenCL, CUDA | Jul 2021",
                 "description": [
                     "Replaces colors and color gradients in video streams using custom hardware-accelerated algorithms"
-                ]
+                ],
+                "githubLink": {
+                    "user": "TheNewJavaman",
+                    "repository": "flow-key-virtual-greenscreen"
+                }
             },
             {
                 "name": "Masquito",
                 "subtitle": "Dart/Flutter, Python/ImageAI/Keras, Python/Flask | Oct 2020 - Dec 2020",
                 "description": [
                     "AI-assisted face mask detection; won the Gold, AI, Impact, and Design Excellence awards at WAICY 2020"
-                ]
+                ],
+                "githubLink": {
+                    "user": "MasquitoWasTaken",
+                    "repository": "masquito-ml-training"
+                }
             },
             {
                 "name": "Cinematic FPV Drone",
                 "subtitle": "Circuit Design, Firmware Modification | Jul 2019 - Sep 2020",
                 "description": [
-                    "Takes first-person-view footage in the air and relays it to a ground station. I custom built a drone, installed firmware, modified software, and created a ground station"
+                    "Takes first-person-view footage in the air and relays it to a ground station; I custom-built two drones, installed firmware, modified software, and built a ground station"
                 ]
             },
             {
@@ -114,14 +140,14 @@
                 "name": "Synesthesia",
                 "subtitle": "C#, Hardware | Jan 2020",
                 "description": [
-                    "Sync PC audio with WS812B addressable LED strips"
+                    "Syncs PC audio with WS812B addressable LED strips"
                 ]
             },
             {
                 "name": "Colors",
                 "subtitle": "Javascript/JQuery | Nov 2019 - Dec 2019",
                 "description": [
-                    "Reduce anxiety by watching animated color gradients"
+                    "Reduces anxiety by displaying animated color gradients"
                 ]
             },
             {
