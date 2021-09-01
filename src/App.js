@@ -2,6 +2,8 @@ import './App.css';
 import profile from './profile.jfif';
 //import profile from './drone.jpg';
 import data from './data.json';
+import { ArrowUpward, GitHub, LinkedIn } from '@material-ui/icons';
+
 
 function App() {
   return (
@@ -11,15 +13,23 @@ function App() {
       </div>
       <div className="table">
         {
-          data.map(section => <a className="table-link" href={"#" + section.name.toLowerCase()}>{section.name}</a>)
+          data.map(section => <a className="table-link link-underline link-underline-heavy" href={"#" + section.name.toLowerCase()}>{section.name}</a>)
         }
       </div>
       <div className="intro">
         <div className="intro-column">
           <div className="intro-contacts">
-            <a className="intro-contacts-link" href="https://github.com/TheNewJavaman/">GITHUB</a>
-            <a className="intro-contacts-link" href="mailto:gpizarro@javaman.net">GPIZARRO@JAVAMAN.NET</a>
-            <a className="intro-contacts-link" href="https://www.linkedin.com/in/gkpizarro/">LINKEDIN</a>
+            <a className="intro-contacts-link" href="https://github.com/TheNewJavaman/">
+              <GitHub className="intro-contacts-icon"></GitHub>
+              <p className="intro-contacts-text link-underline">GITHUB</p>
+            </a>
+            <a className="intro-contacts-link" href="mailto:gpizarro@javaman.net">
+              <p className="intro-contacts-text link-underline">GPIZARRO@JAVAMAN.NET</p>
+            </a>
+            <a className="intro-contacts-link" href="https://www.linkedin.com/in/gkpizarro/">
+              <LinkedIn className="intro-contacts-icon"></LinkedIn>
+              <p className="intro-contacts-text link-underline">LINKEDIN</p>
+            </a>
           </div>
           <div className="intro-bio">
             <div className="intro-bio-text">
@@ -35,7 +45,10 @@ function App() {
           {
             data.map(section => <div>
               <div className="section-name" id={section.name.toLowerCase()}>
-                <p className="section-name-text">{section.name}</p>
+                <p className="section-name-text" >{section.name}</p>
+                <ArrowUpward className="section-name-link" onClick={() => {
+                  document.getElementsByClassName("app")[0].scrollIntoView();
+                }}></ArrowUpward>
               </div>
               {
                 section.entries.map(entry =>

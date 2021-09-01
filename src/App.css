@@ -12,14 +12,17 @@ a {
   font-family: 'Poppins';
   font-weight: 600;
   text-decoration: none;
+}
+
+.link-underline {
   display: block;
   position: relative;
 }
 
-a::after {
+.link-underline::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
   left: 0;
   width: 100%;
   height: 1px;
@@ -29,7 +32,11 @@ a::after {
   transform-origin: center;
 }
 
-a:hover::after, a:focus::after {
+.link-underline-heavy::after {
+  height: 2px;
+}
+
+.link-underline:hover::after, .link-underline:focus::after {
   transform: scale(1);
 }
 
@@ -67,6 +74,12 @@ a:hover::after, a:focus::after {
 .intro-contacts-link {
   color: white;
   font-size: 15px;
+  display: flex;
+}
+
+.intro-contacts-text {
+  padding-top: 1px;
+  margin-left: 7px;
 }
 
 .intro-bio {
@@ -144,8 +157,8 @@ a:hover::after, a:focus::after {
   color: #303030;
 }
 
-.section-name-icon {
-  margin-right: -7px;
+.section-name-link {
+  cursor: pointer;
 }
 
 .entry-name {
@@ -173,11 +186,7 @@ a:hover::after, a:focus::after {
   margin-top: 20px;
 }
 
-.table-link {
-  color: white;
-}
-
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 500px) {
   .header-slash {
     border-right: calc(100vw - 17px) solid white;
   }
@@ -185,22 +194,9 @@ a:hover::after, a:focus::after {
   .intro-bio {
     margin-top: 67px;
   }
-
-  .table {
-    position: absolute;
-    top: 105px;
-    left: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1px;
-  }
-
-  .table-link {
-    margin-bottom: 15px;
-  }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 500px) {
   .intro-bio {
     margin-top: 13px;
   }
@@ -208,5 +204,49 @@ a:hover::after, a:focus::after {
   .intro-bio-profile {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1px;
+  padding: 25px;
+}
+
+.table-link {
+  color: white;
+  margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 1100px) {
+  .table {
+    position: absolute;
+    top: 105px;
+    left: 25px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .header-background {
+    padding-top: 371px;
+  }
+
+  .intro-contacts {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1px;
+    padding: 20px;
+    justify-content: flex-end;
+    top: 0px;
+    right: 0px;
+  }
+  
+  .table {
+    position: relative;
+    margin-top: -571px;
+    margin-bottom: 375px;
+    padding: 15px;
   }
 }
