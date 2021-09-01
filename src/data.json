@@ -8,19 +8,22 @@
                 "subtitle": "GoFundMe | Dec 2020 - Aug 2021 (9 months)",
                 "description": [
                     "Worked with the payments engineering team to build tools, features, and improvements to the payments tech stack"
-                ]
+                ],
+                "icon": "gofundme.jpg"
             },
             {
                 "name": "IT Summer Intern",
                 "subtitle": "Polytechnic School | Jun 2019 - Aug 2019 (3 months)",
                 "description": [
                     "Fixed computers, projectors, and printers. Wrote scripts to automate setting up and installing software on hundreds of computers"
-                ]
+                ],
+                "icon": "polytechnic.png"
             },
             {
                 "name": "IT Summer Intern",
                 "subtitle": "Polytechnic School | Jun 2018 - Aug 2018 (3 months)",
-                "description": []
+                "description": [],
+                "icon": "polytechnic.png"
             }
         ]
     },

@@ -13,14 +13,14 @@ function App() {
       </div>
       <div className="table">
         {
-          data.map(section => <a className="table-link link-underline link-underline-heavy" href={"#" + section.name.toLowerCase()}>{section.name}</a>)
+          data.map(section => <a className="table-link link-underline-left" href={"#" + section.name.toLowerCase()}>{section.name}</a>)
         }
       </div>
       <div className="intro">
         <div className="intro-column">
           <div className="intro-contacts">
             <a className="intro-contacts-link" href="https://github.com/TheNewJavaman/">
-              <GitHub className="intro-contacts-icon"></GitHub>
+              <GitHub color="#404040" className="intro-contacts-icon"></GitHub>
               <p className="intro-contacts-text link-underline">GITHUB</p>
             </a>
             <a className="intro-contacts-link" href="mailto:gpizarro@javaman.net">
@@ -61,7 +61,10 @@ function App() {
                       </div>)
                       : null
                     }
-                    {entry.iframeLink ? <iframe className="entry-iframe" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src={entry.iframeLink}></iframe> : null}
+                    {entry.iframeLink
+                      ? <iframe title={entry.name} className="entry-iframe" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src={entry.iframeLink}></iframe>
+                      : null
+                    }
                   </div>
                 )
               }
