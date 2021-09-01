@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Source+Sans+Pro:wght@300;400&family=Roboto:wght@400&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body, p {
   margin: 0;
 }
@@ -98,23 +102,6 @@ a:hover::after, a:focus::after {
   overflow: hidden;
 }
 
-@media only screen and (min-width: 800px) {
-  .intro-bio {
-    margin-top: 67px;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .intro-bio {
-    margin-top: 13px;
-  }
-  
-  .intro-bio-profile {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 .content {
   margin-top: 50px;
   background-color: #F6F9FC;
@@ -184,4 +171,42 @@ a:hover::after, a:focus::after {
 
 .entry-iframe {
   margin-top: 20px;
+}
+
+.table-link {
+  color: white;
+}
+
+@media only screen and (min-width: 800px) {
+  .header-slash {
+    border-right: calc(100vw - 17px) solid white;
+  }
+  
+  .intro-bio {
+    margin-top: 67px;
+  }
+
+  .table {
+    position: absolute;
+    top: 105px;
+    left: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1px;
+  }
+
+  .table-link {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .intro-bio {
+    margin-top: 13px;
+  }
+  
+  .intro-bio-profile {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

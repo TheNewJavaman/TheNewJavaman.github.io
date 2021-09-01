@@ -4,11 +4,15 @@ import profile from './profile.jfif';
 import data from './data.json';
 
 function App() {
-  console.log(data);
   return (
     <div className="app">
       <div className="header-background">
         <div className="header-slash"></div>
+      </div>
+      <div className="table">
+        {
+          data.map(section => <a className="table-link" href={"#" + section.name.toLowerCase()}>{section.name}</a>)
+        }
       </div>
       <div className="intro">
         <div className="intro-column">
@@ -30,7 +34,7 @@ function App() {
         <div className="content-column">
           {
             data.map(section => <div>
-              <div className="section-name">
+              <div className="section-name" id={section.name.toLowerCase()}>
                 <p className="section-name-text">{section.name}</p>
               </div>
               {
