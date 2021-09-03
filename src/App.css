@@ -234,6 +234,13 @@ a {
 }
 
 @media only screen and (max-width: 1270px) {
+  .link-underline::after {
+    top: 0;
+    left: calc(100% + 8px);
+    width: 2px;
+    height: 23px;
+  }
+  
   .header-background {
     padding-top: 371px;
   }
