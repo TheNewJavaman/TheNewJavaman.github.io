@@ -194,6 +194,12 @@ a {
   margin-top: 20px;
 }
 
+@media only screen and (min-width: 795px) {
+  .header-slash {
+    border-right: calc(100vw - 17px) solid white;
+  }
+}
+
 @media only screen and (max-width: 795px) {  
   .intro-bio-profile {
     margin-left: auto;
