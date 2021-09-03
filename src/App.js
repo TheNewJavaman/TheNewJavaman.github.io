@@ -46,7 +46,7 @@ function App() {
               <div className="section-name" id={section.name.toLowerCase()}>
                 <p className="section-name-text" >{section.name}</p>
                 <ArrowUpward className="section-name-link" onClick={() => {
-                  document.getElementsByClassName("app")[0].scrollIntoView();
+                  window.location.href="#";
                 }}></ArrowUpward>
               </div>
               {
