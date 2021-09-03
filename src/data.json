@@ -12,16 +12,10 @@
             },
             {
                 "name": "IT Summer Intern",
-                "subtitle": "Polytechnic School | Jun 2019 - Aug 2019 (3 months)",
+                "subtitle": "Polytechnic School | Jun 2018 - Aug 2018, Jun 2019 - Aug 2019 (6 months)",
                 "description": [
                     "Fixed computers, projectors, and printers. Wrote scripts to automate setting up and installing software on hundreds of computers"
                 ],
-                "icon": "polytechnic.png"
-            },
-            {
-                "name": "IT Summer Intern",
-                "subtitle": "Polytechnic School | Jun 2018 - Aug 2018 (3 months)",
-                "description": [],
                 "icon": "polytechnic.png"
             }
         ]
@@ -43,15 +37,10 @@
         "entries": [
             {
                 "name": "Technology Volunteer",
-                "subtitle": "Pasadena Village | Sep 2020 - Present (37+ hours)",
+                "subtitle": "Pasadena Village | Sep 2018 - Nov 2018, Sep 2020 - Present (43+ hours)",
                 "description": [
                     "Assisted senior citizens with technology issues and worked on website SEO with Google Analytics"
                 ]
-            },
-            {
-                "name": "Technology Volunteer",
-                "subtitle": "Pasadena Village | Sep 2018 - Nov 2018 (6 hours)",
-                "description": []
             }
         ]
     },
