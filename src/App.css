@@ -194,21 +194,7 @@ a {
   margin-top: 20px;
 }
 
-@media only screen and (min-width: 500px) {
-  .header-slash {
-    border-right: calc(100vw - 17px) solid white;
-  }
-  
-  .intro-bio {
-    margin-top: 67px;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .intro-bio {
-    margin-top: 13px;
-  }
-  
+@media only screen and (max-width: 795px) {  
   .intro-bio-profile {
     margin-left: auto;
     margin-right: auto;
@@ -217,8 +203,7 @@ a {
 
 .table {
   display: flex;
-  flex-wrap: wrap;
-  width: 1px;
+  flex-direction: column
 }
 
 .table-link {
@@ -226,7 +211,11 @@ a {
   margin-bottom: 7px;
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1270px) {
+  .intro-bio {
+    margin-top: 67px;
+  }
+  
   .intro-bio-text-header {
     margin-top: -10px;
   }
@@ -234,30 +223,36 @@ a {
   .table {
     position: absolute;
     top: 106px;
-    left: 25px;
+    left: calc(calc(calc(100vw - 830px) / 2) - 200px);
   }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1270px) {
   .header-background {
     padding-top: 371px;
   }
 
-  .intro-contacts {
-    position: absolute;
+  .intro-column {
+    margin-top: -171px;
     display: flex;
     flex-wrap: wrap;
-    width: 1px;
-    padding: 20px;
-    justify-content: flex-end;
-    top: 0px;
-    right: 0px;
+    justify-content: space-between;
   }
-  
-  .table {
-    position: relative;
-    margin-top: -571px;
-    margin-bottom: 375px;
-    padding: 15px;
+
+  .intro-bio {
+    margin-top: 13px;
+    width: 100%;
+  }
+
+  .intro-contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+  }
+
+  .intro-contacts-link {
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: 7px;
   }
 }

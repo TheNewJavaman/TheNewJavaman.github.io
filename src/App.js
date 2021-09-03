@@ -4,20 +4,19 @@ import profile from './profile.jfif';
 import data from './data.json';
 import { ArrowUpward, GitHub, LinkedIn } from '@material-ui/icons';
 
-
 function App() {
   return (
     <div className="app">
       <div className="header-background">
         <div className="header-slash"></div>
       </div>
-      <div className="table">
-        {
-          data.map(section => <a className="table-link link-underline-left" href={"#" + section.name.toLowerCase()}>{section.name}</a>)
-        }
-      </div>
       <div className="intro">
         <div className="intro-column">
+          <div className="table">
+            {
+              data.map(section => <a className="table-link link-underline-left" href={"#" + section.name.toLowerCase()}>{section.name}</a>)
+            }
+          </div>
           <div className="intro-contacts">
             <a className="intro-contacts-link" href="https://github.com/TheNewJavaman/">
               <GitHub color="#404040" className="intro-contacts-icon"></GitHub>
