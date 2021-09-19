@@ -1,7 +1,6 @@
 [
     {
         "name": "EXPERIENCE",
-        "opened": true,
         "entries": [
             {
                 "name": "Software Engineer Intern",
@@ -13,23 +12,16 @@
             },
             {
                 "name": "IT Summer Intern",
-                "subtitle": "Polytechnic School | Jun 2019 - Aug 2019 (3 months)",
+                "subtitle": "Polytechnic School | Jun 2018 - Aug 2018, Jun 2019 - Aug 2019 (6 months)",
                 "description": [
                     "Fixed computers, projectors, and printers. Wrote scripts to automate setting up and installing software on hundreds of computers"
                 ],
-                "icon": "polytechnic.png"
-            },
-            {
-                "name": "IT Summer Intern",
-                "subtitle": "Polytechnic School | Jun 2018 - Aug 2018 (3 months)",
-                "description": [],
                 "icon": "polytechnic.png"
             }
         ]
     },
     {
         "name": "EDUCATION",
-        "opened": true,
         "entries": [
             {
                 "name": "Polytechnic School",
@@ -41,8 +33,19 @@
         ]
     },
     {
+        "name": "VOLUNTEERING",
+        "entries": [
+            {
+                "name": "Technology Volunteer",
+                "subtitle": "Pasadena Village | Sep 2018 - Nov 2018, Sep 2020 - Present (43+ hours)",
+                "description": [
+                    "Assisted senior citizens with technology issues and worked on website SEO using Google Analytics"
+                ]
+            }
+        ]
+    },
+    {
         "name": "AWARDS",
-        "opened": false,
         "entries": [
             {
                 "name": "AP Scholar with Honor Award",
@@ -76,7 +79,6 @@
     },
     {
         "name": "MUSIC",
-        "opened": false,
         "entries": [
             {
                 "iframeLink": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1115087815&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
@@ -94,7 +96,6 @@
     },
     {
         "name": "PROJECTS",
-        "opened": false,
         "entries": [
             {
                 "name": "Skyblock Optimizer",
