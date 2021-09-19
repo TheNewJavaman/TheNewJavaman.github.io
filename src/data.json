@@ -97,6 +97,13 @@
         "opened": false,
         "entries": [
             {
+                "name": "Skyblock Optimizer",
+                "subtitle": "Python/SciPy/Gekko | Sep 2021",
+                "description": [
+                    "Uses numerical analysis of quadratic non-convex equations to optimize damage output on Hypixel Skyblock"
+                ]
+            },
+            {
                 "name": "Skyblock Repository",
                 "subtitle": "Kotlin/Spring, MySQL, Redis | Aug 2021",
                 "description": [
