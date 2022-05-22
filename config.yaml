@@ -1,7 +1,7 @@
 baseURL: "https://javaman.net/"
 languageCode: "en-us"
 title: "Gabriel Pizarro"
-googleAnalytics: "G-VFV74EG31N"
+googleAnalytics: "G-RVP58Z33V4"
 permalinks:
     post: "/posts/:slug/"
     page: "/:slug/"
