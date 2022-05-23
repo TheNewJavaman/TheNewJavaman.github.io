@@ -19,7 +19,7 @@ params:
         avatar:
             enabled: true
             local: true
-            src: "images/profile.jpg"
+            src: "images/profile.webp"
         subtitle: "Self-taught. Engages in tomfoolery."
     article:
         readingTime: true

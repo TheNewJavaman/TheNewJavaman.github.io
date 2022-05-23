@@ -11,16 +11,6 @@ tags:
     - "gaming"
     - "openvr"
     - "openxr"
-links:
-    - title: "GitHub"
-      website: "https://github.com/TheNewJavaman/unreal-vr"
-      image: "../../common/brand-github.svg"
-    - title: "Patreon"
-      website: "https://patreon.com/gpizarro"
-      image: "../../common/brand-patreon.svg"
-    - title: "Flat2VR Discord"
-      website: "http://flat2vr.com"
-      image: "../../common/brand-discord.svg"
 draft: true
 ---
 
