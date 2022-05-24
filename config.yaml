@@ -25,7 +25,6 @@ params:
         readingTime: true
     widgets:
         homepage:
-            - type: search
             - type: archives
               params:
                   limit: 5
